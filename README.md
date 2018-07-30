@@ -18,6 +18,8 @@
 
 **Вам нужно скачать и установить [Python по ссылке](https://www.python.org/ftp/python/3.7.0/python-3.7.0.exe)**
 
+**Файл [ChromeDriver](https://chromedriver.storage.googleapis.com/2.41/chromedriver_win32.zip) нужно поместить в папку проекта.**
+
 **И среду разработки для удобного запуска, рекомендую скачать [PyCharm по ссылке](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC).**
 
 **Для работы бота нужно установить Selenium, при запуске проекта PyCharm предложит вам установить его.**
