@@ -27,12 +27,12 @@ while True:
         stop = True
 
         for abq in range(10):
-            sleep(0)
+            sleep(10)
             # Заработок на подписках
             browser.get('http://freelikes.online/earn/youtube/ytsub')
             sleep(2)
             print('Подписка страниц')
-            while True:
+            while stop:
                 points = browser.find_element_by_xpath("//*[@class='do do-task btn btn-primary btn-block']").text
                 sleep(2)
                 points = points.replace('баллов', '').replace(' ', '')
@@ -93,7 +93,7 @@ while True:
                 browser.refresh()
                 sleep(4)
 
-            sleep(0)
+            sleep(10)
             browser.get('http://freelikes.online/earn/youtube/ytlike')
             sleep(3)
             print('Лайки')
@@ -128,7 +128,7 @@ while True:
                 browser.refresh()
                 sleep(4)
 
-            sleep(30)
+            sleep(10)
             browser.get('http://freelikes.online/earn/youtube/ytview')
             sleep(3)
             print('Просмотры')
