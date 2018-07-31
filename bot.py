@@ -8,7 +8,7 @@ while True:
         # Авторизация на сайте
         link = 'http://freelikes.online/'
         browser.get(link)
-        browser.set_window_size(300, 400)
+        browser.set_window_size(500, 700)
         sleep(5)
         next_page = browser.find_elements_by_xpath('//*[@id="uLogin"]/a[3]')
         browser.get(next_page[0].get_attribute('href'))
@@ -41,7 +41,6 @@ while True:
                 browser.find_element_by_xpath("//*[@class='do do-task btn btn-primary btn-block']").click()
                 sleep(3)
                 browser.switch_to.window(browser.window_handles[1])
-                browser.set_window_size(300, 400)
                 sleep(3)
                 trust = browser.find_element_by_xpath("//*[@class='style-scope ytd-subscribe-button-renderer']").text
                 trust = str(trust).lower()
@@ -107,7 +106,6 @@ while True:
                 browser.find_element_by_xpath("//*[@class='do do-task btn btn-primary btn-block']").click()
                 sleep(3)
                 browser.switch_to.window(browser.window_handles[1])
-                browser.set_window_size(300, 400)
                 sleep(4)
                 try:
                     browser.find_element_by_xpath(
@@ -142,7 +140,6 @@ while True:
                 browser.find_element_by_xpath("//*[@class='do do-task btn btn-primary btn-block']").click()
                 sleep(3)
                 browser.switch_to.window(browser.window_handles[1])
-                browser.set_window_size(300, 400)
                 sleep(35)
                 print('Посмотрел видео +', points)
                 browser.close()
