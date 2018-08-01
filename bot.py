@@ -56,12 +56,13 @@ def my_bot():
                             sleep(2)
                             title = browser.find_element_by_xpath("/html/body/ytd-app/ytd-popup-container/paper-dialog").text
                             sleep(2)
-                            print('Ограничение по подпискам')
-                            stop = False
-                            sleep(2)
-                            browser.close()
-                            browser.switch_to.window(my_window)
-                            break
+                            if 'ошибка' in str(title).lower() or 'жаль' in str(title).lower():
+                                print('Ограничение по подпискам')
+                                stop = False
+                                sleep(2)
+                                browser.close()
+                                browser.switch_to.window(my_window)
+                                break
                         except Exception as a:
                             pass
                         sleep(2)
@@ -78,12 +79,13 @@ def my_bot():
                             sleep(2)
                             title = browser.find_element_by_xpath("/html/body/ytd-app/ytd-popup-container/paper-dialog").text
                             sleep(2)
-                            print('Ограничение по подпискам')
-                            stop = False
-                            sleep(2)
-                            browser.close()
-                            browser.switch_to.window(my_window)
-                            break
+                            if 'ошибка' in str(title).lower() or 'жаль' in str(title).lower():
+                                print('Ограничение по подпискам')
+                                stop = False
+                                sleep(2)
+                                browser.close()
+                                browser.switch_to.window(my_window)
+                                break
                         except Exception as a:
                             pass
                         print('Подписались +', points)
