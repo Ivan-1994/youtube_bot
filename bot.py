@@ -4,17 +4,10 @@ from time import sleep
 
 """"
 Сюда нужно вводить ваши данные эмейл и пароль, примерно так:
-data_user = {'mygmail1': 'mypassword',
-             'mygmail2': 'mypassword',
-             'mygmail3': 'mypassword',
-             'mygmail4': 'mypassword',
-             'mygmail5': 'mypassword',}
-Вводите нужное вам количество акаунтов
 """
 data_user = {'эмейл': 'пароль',
-             'эмейл': 'пароль',
              'эмейл': 'пароль'}
-
+# Вводите нужное вам количество акаунтов
 
 def my_bot(email, password):
     while True:
@@ -126,7 +119,7 @@ def my_bot(email, password):
                     points = browser.find_element_by_xpath(
                         "//*[@class='do do-task btn btn-primary btn-block']").text
                     points = int(points.replace('баллов', '').replace(' ', ''))
-                    if points < 3:
+                    if points < 2:
                         print(email, ':Закончил Лайкать')
                         break
                     browser.find_element_by_xpath("//*[@class='do do-task btn btn-primary btn-block']").click()
@@ -156,7 +149,7 @@ def my_bot(email, password):
                     points = browser.find_element_by_xpath(
                         "//*[@class='do do-task btn btn-primary btn-block']").text
                     points = int(points.replace('баллов', '').replace(' ', ''))
-                    if points < 3:
+                    if points < 2:
                         print(email, ':Закончил просмотр')
                         break
                     browser.find_element_by_xpath("//*[@class='do do-task btn btn-primary btn-block']").click()
