@@ -133,7 +133,7 @@ def my_bot(email, password):
                         print(email, ':Лайкнул запись +', points)
                         sleep(10)
                     except Exception as a:
-                        print(email, ':129: ', a)
+                        pass
                     browser.close()
                     browser.switch_to.window(my_window)
                     sleep(3)
