@@ -15,7 +15,7 @@ def my_bot(email, password):
         browser = Chrome('chromedriver')
         try:
             # Авторизация на сайте
-            link = 'http://freelikes.online/'
+            link = 'http://freelikes.online/782037'
             browser.get(link)
             browser.set_window_size(500, 800)
             sleep(5)
